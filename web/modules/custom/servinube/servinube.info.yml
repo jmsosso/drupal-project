@@ -1,0 +1,5 @@
+name: servinube base module
+type: module
+description: Basic stuff to include in all sites.
+core: 8.x
+package: Custom

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/servinube",
+  "type": "drupal-module",
+  "description": "Basic stuff to include in all sites.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/servinube",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/servinube",
+    "source": "http://cgit.drupalcode.org/servinube"
+  },
+  "require": { }
+}

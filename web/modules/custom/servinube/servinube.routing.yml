@@ -1,0 +1,8 @@
+
+servinube.controller_base_demo:
+  path: '/demo'
+  defaults:
+    _controller: '\Drupal\servinube\Controller\ControllerBase::demo'
+    _title: 'Demo page'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains servinube.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function servinube_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the servinube module.
+    case 'help.page.servinube':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Basic stuff to include in all sites.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
