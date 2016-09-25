@@ -1,13 +1,16 @@
 <?php
 
-namespace Drupal\servinube\Tests;
+namespace Drupal\Tests\servinube;
 
-use Drupal\simpletest\WebTestBase;
+use Drupal\KernelTests\KernelTestBase;
+use Drupal\servinube\Controller\ControllerBase;
 
 /**
  * Provides automated tests for the servinube module.
+ * 
+ * @group servinube
  */
-class ControllerBaseTest extends WebTestBase {
+class ControllerBaseTest extends KernelTestBase {
 
 
   /**
@@ -33,7 +36,8 @@ class ControllerBaseTest extends WebTestBase {
    */
   public function testControllerBase() {
     // Check that the basic functions of module servinube.
-    $this->assertEquals(TRUE, TRUE, 'Test Unit Generated via Drupal Console.');
+    $controller = new ControllerBase();
+    $this->assertEquals(count($controller->demo()), 0, 'Test Unit Generated via Drupal Console.');
   }
 
 }
